@@ -1,0 +1,261 @@
+id#,Name,Type
+203,Netflix,sub
+157,Hulu,sub
+26,Amazon Prime,sub
+387,HBO MAX,sub
+372,Disney+,sub
+371,AppleTV+,sub
+409,BBC iPlayer,free
+392,Hayu,sub
+444,Paramount+,sub
+248,Showtime,sub
+393,Crave,sub
+388,Peacock,free
+389,Peacock Premium,sub
+250,Showtime Anytime,tve
+365,Amazon Freevee,free
+394,Crave Plus,sub
+440,Netflix Free,free
+395,Crave Starz,sub
+425,Stan,sub
+232,STARZ,sub
+402,CBC Gem,free
+424,Foxtel Now,sub
+408,Sky Go,sub
+77,Crackle,free
+406,Now TV,sub
+407,All 4,free
+423,BINGE,sub
+419,Britbox UK,sub
+296,Tubi TV,free
+10,ABC,tve
+13,AMC,tve
+108,EPIX,tve
+364,Facebook Watch,free
+122,FX,tve
+367,Kanopy,sub
+174,MAX GO,tve
+192,NBC,tve
+299,USA,tve
+369,Youtube Premium,free
+159,Hulu with Showtime,sub
+368,Youtube Premium,sub
+80,Crunchyroll Premium,sub
+439,Plex,free
+451,Topic,sub
+366,The Criterion Channel,sub
+125,Fandor,sub
+252,Shudder,sub
+318,WWE Network,sub
+349,iTunes,purchase
+215,PBS,free
+293,Tribeca Shortlist,sub
+140,Google Play,purchase
+24,Amazon,purchase
+307,VUDU,purchase
+344,YouTube,purchase
+270,Syfy,tve
+271,Syfy,free
+18,Acorn TV (Via Amazon Prime),sub
+27,Ameba (Via Amazon Prime),sub
+357,Boomerang (Via Amazon Prime),sub
+68,Cinemax (Via Amazon Prime),sub
+73,Comedy Central Stand-Up Plus (Via Amazon Prime),sub
+81,Curiosity Stream (Via Amazon Prime),sub
+84,Daring Docs (Via Amazon Prime),sub
+101,Docurama (Via Amazon Prime),sub
+102,Dove Channel (Via Amazon Prime),sub
+103,Dox (Via Amazon Prime),sub
+126,Fandor (Via Amazon Prime),sub
+129,Filmbox Live (Via Amazon Prime),sub
+138,Gaia (Via Amazon Prime),sub
+358,Hallmark Movies Now (Via Amazon Prime),sub
+360,HBO,sub
+144,HBO (Via Amazon Prime),sub
+148,HISTORY Vault (Via Amazon Prime),sub
+163,IndieFlix Shorts (Via Amazon Prime),sub
+172,Lifetime Movie Club (Via Amazon Prime),sub
+216,PBS KIDS (Via Amazon Prime),sub
+227,Qello Concerts (Via Amazon Prime),sub
+238,Screambox (Via Amazon Prime),sub
+247,Shout! Factory TV (Via Amazon Prime),sub
+249,Showtime (via Amazon Prime),sub
+253,Shudder (Via Amazon Prime),sub
+256,Smithsonian Earth (Via Amazon Prime),sub
+234,STARZ (Via Amazon Prime),sub
+269,SundanceNow Doc Club (Via Amazon Prime),sub
+294,Tribeca Shortlist (Via Amazon Prime),sub
+295,True Crime Files by ID (Via Amazon Prime),sub
+301,Urban Movie Channel (Via Amazon Prime),sub
+442,DirecTV On Demand,sub
+443,Spectrum On Demand,sub
+404,FX Now Canada,sub
+6,60 Minutes All Access,sub
+427,7plus,free
+426,9Now,free
+7,A&E,free
+8,A&E,tve
+9,ABC,free
+428,ABC iview,free
+17,Acorn TV,sub
+19,Adult Swim,free
+20,Adult Swim,tve
+12,AHC GO,tve
+378,AMC+,sub
+30,Animal Planet GO,tve
+32,BBC America,tve
+437,Beamafilm,sub
+34,BET,tve
+35,BET,free
+382,BET+,sub
+374,BET+ (Via Amazon Prime),sub
+410,BFI Player,sub
+46,Bravo,tve
+376,Britbox,sub
+377,Britbox (Via Amazon Prime),sub
+62,Cartoon Network,tve
+63,Cartoon Network,free
+50,CBS,free
+53,CBS News,free
+441,Chili,purchase
+384,Cinemax (Via Hulu),sub
+397,Cineplex,purchase
+449,Clarovideo,sub
+54,CMT,free
+55,CMT,tve
+56,CNBC,tve
+57,CNBC,free
+71,Comedy Central,free
+72,Comedy Central,tve
+79,Crunchyroll,free
+403,CTV,free
+421,Curiosity Stream,sub
+412,Curzon Home Cinema,purchase
+284,The CW,free
+61,CW Seed,free
+405,Darkmatter TV,sub
+86,Destination America GO,tve
+91,Discovery GO,tve
+93,Discovery Life GO,tve
+445,Discovery+,sub
+96,Disney Junior,free
+355,DisneyNOW,tve
+356,DisneyNOW,free
+82,DIY,free
+107,E!,tve
+375,Epix (Via Amazon Prime),sub
+379,Epix Now,sub
+124,FandangoNOW,purchase
+436,Fetch TV,purchase
+422,Flix Premiere,sub
+399,FlixFling,sub
+131,Food Network,free
+114,FOX,tve
+115,FOX,free
+361,Freeform,free
+132,Freeform,tve
+373,fuboTV,sub
+380,Funimation,free
+381,Funimation,sub
+134,Funny or Die,free
+135,Fuse,free
+347,fyi,free
+348,fyi,tve
+448,Globalplay,sub
+401,GuideDoc,sub
+151,Hallmark Channel Everywhere,tve
+152,Hallmark Movies Now,sub
+383,HBO,free
+385,HBO (Via Hulu),sub
+147,HGTV,free
+420,HiDive,sub
+287,The History Channel,tve
+288,The History Channel,free
+149,HLN,free
+150,HLN,tve
+400,Hollywood Suite,sub
+390,Hoopla,sub
+447,Hotstar,sub
+396,ICI TOU.TV,sub
+160,IFC,tve
+162,IndieFlix,sub
+165,Investigation Discovery,free
+166,Investigation Discovery GO,tve
+413,ITV Player,sub
+170,Lifetime,free
+171,Lifetime,tve
+168,LOGO,free
+169,LOGO,tve
+398,Microsoft Store,purchase
+178,MTV,tve
+179,MTV,free
+181,MUBI,sub
+418,My5,free
+196,Nat Geo Wild,free
+197,Nat Geo Wild,tve
+198,National Geographic,free
+199,National Geographic,tve
+201,National Geographic Kids,free
+191,NBC,free
+193,NBC News,free
+194,NBC News,tve
+195,NBC UNIVERSO,tve
+204,Nick Jr.,free
+206,Nickelodeon,tve
+207,Nickelodeon,free
+214,Oxygen,tve
+435,OzFlix,purchase
+414,Pantaflix,purchase
+221,Paramount Network,tve
+217,PBS Kids,free
+391,Pluto TV,free
+225,Popcornflix,free
+431,Quickflix,sub
+432,Quickflix Store,purchase
+417,Rakuten TV,purchase
+452,The Roku Channel,free
+429,SBS On Demand,free
+237,Science GO,tve
+246,Shout! Factory TV,free
+251,Showtime FREEview,free
+411,Sky Store,purchase
+255,Smithsonian Channel,free
+257,SnagFilms,free
+259,South Park Studios,free
+453,Star+,
+231,STARZ,free
+386,STARZ (Via Hulu),sub
+433,Sun Nxt,sub
+267,Sundance,tve
+268,SundanceNow Doc Club,sub
+415,Talk Talk TV,purchase
+272,TBS,tve
+282,Telemundo Now,tve
+434,Telstra TV,purchase
+430,tenplay,free
+274,TLC GO,tve
+276,TNT,tve
+292,Travel Channel,free
+353,truTV,tve
+277,TV Land,tve
+278,TV Land,free
+416,UKTV Play,free
+298,USA,free
+311,Verizon On Demand,purchase
+302,VH1,free
+303,VH1,tve
+305,VICELAND,tve
+306,VICELAND,free
+313,Vimeo,free
+446,Virgin TV GO,sub
+308,VUDU,free
+321,Watch Cooking Channel,tve
+322,Watch DIY Network,tve
+330,Watch Food Network,tve
+331,Watch HGTV,tve
+332,Watch TCM,tve
+333,Watch Travel Channel,tve
+315,WE tv,tve
+342,Yahoo View,free
+345,YouTube,free
+450,Zee5,sub
