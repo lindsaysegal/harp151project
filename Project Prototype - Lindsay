@@ -1,0 +1,131 @@
+import re
+from tkinter import*
+import requests
+from tkinter import ttk
+from tkinter.messagebox import showinfo
+from PIL import Image, ImageTk
+from tkinter import messagebox
+import pandas as pd 
+import csv
+import os
+## Starts a window 
+root = tk.Tk() 
+root.title('Project Window Demo')
+## Gives the window the size
+root.geometry('600x450+50+50')
+## displays the hello world message
+message =tk.Label(root,text="Please choose a TV or Movie selection, Genre and Streaming Service",bg="blue",fg="white")
+message.pack(fill=tk.X) 
+selected= tk.StringVar()
+Wtype=tk.StringVar()
+Watchtype=tk.StringVar()
+
+radioNetflix=ttk.Radiobutton(root,text="Netflix",value=8, variable=Watchtype)
+radioHulu=ttk.Radiobutton(root,text="Hulu",value=15, variable=Watchtype)
+radioPrime=ttk.Radiobutton(root,text="Prime",value=9, variable=Watchtype)
+radioNetflix.pack(side=tk.RIGHT)
+radioHulu.pack(side=tk.RIGHT)
+radioPrime.pack(side=tk.RIGHT)
+radiotv=ttk.Radiobutton(root,text="TV",value=2, variable=Wtype)
+radioMovie=ttk.Radiobutton(root,text="Movie",value=1, variable=Wtype)
+radiotv.pack(side=tk.LEFT)
+radioMovie.pack(side=tk.LEFT)
+r1 = ttk.Radiobutton(root, text='Action', value=28, variable=selected)
+r2 = ttk.Radiobutton(root, text='Sci-fi', value=878, variable=selected)
+r3 = ttk.Radiobutton(root, text='Drama', value=18, variable=selected)
+r4 = ttk.Radiobutton(root, text = 'Comedy' , value =35, variable=selected)
+r5 = ttk.Radiobutton(root, text = 'Family' , value= 10751, variable = selected)
+r6 = ttk.Radiobutton(root, text = 'Documentary' , value = 99, variable=selected)
+r7 = ttk.Radiobutton(root, text = 'Crime' , value=80, variable=selected)
+r8 = ttk.Radiobutton(root, text ='Mystery',  value =9648, variable=selected)
+
+listbox=Listbox(root,height=15,width=30)
+listbox.insert(END,"Select TV or Movie and Genre")
+##I use lists to keep the values of ratings and summarys and we use the index to match 
+#the right tv show title to the ratings and summary. 
+myRating=[]
+mySummary=[]
+def selectedsum():
+    for item in listbox.curselection():
+        messagebox.showinfo("Summary" , mySummary[item])
+        
+def selectedcurs():
+    for item in listbox.curselection():
+        messagebox.showinfo("Rating",str(myRating[item]))       
+def selectedget():
+    if selected.get()=="" or Wtype.get()=="" or Watchtype.get()=="":
+        ##If the radio buttons were not selected the user will recieve an error message
+        messagebox.showerror("Error", "Choose TV or Movie AND Select Genre AND Where to Watch")
+    else:
+        pattern="[a-zA-Z0-9]"
+        if len(myRating)>1:
+            myRating.clear()
+            mySummary.clear()
+        listbox.delete(0,END)
+        i = 1
+        if Wtype.get()=="1":
+            while i<20:
+                json_file=requests.get(f"http://api.themoviedb.org/3/discover/movie?api_key=2b0268899e7722c303709443c41c21f4&sort_by=popularity.desc&include_adult=true&with_genres={selected.get()}&with_watch_providers={Watchtype.get()}&watch_region=US&page={i}").json()
+                i+=1
+                for elem in json_file['results']:
+                    title = elem.get('title')
+                    if(re.search(pattern,title)):
+                        voteavg = elem.get('vote_average')
+                        myRating.append(voteavg)
+                        votenum = elem.get('vote_count')
+                        summary =elem.get('overview')
+                        mySummary.append(summary)
+                        listbox.insert(END,title)
+                    
+    ##Since the movie genre id and tv genre ids are differnt i reassigned the 
+    ##values for the search to work
+        elif Wtype.get()=="2":
+            genreVar=0 
+            if selected.get()=="28":
+                genreVar=10759
+                print(genreVar)
+            elif selected.get()=="878":
+                genreVar=10765
+            elif selected.get()=="18":
+                genreVar=18
+            elif selected.get()=="35":
+                genreVar=35
+            elif selected.get()=="10751":
+                genreVar=10751
+            elif selected.get()=="99":
+                genreVar=99
+            elif selected.get()=="80":
+                genreVar=80
+            elif selected.get()== "9648":
+                genreVar=9648
+        
+            while i<20:
+                json_file=requests.get(f"http://api.themoviedb.org/3/discover/tv?api_key=2b0268899e7722c303709443c41c21f4&with_original_language=en&language=en-US&region=US&sort_by=popularity.desc&include_adult=false&include_video=false&with_genres={genreVar}&with_watch_providers={Watchtype.get()}&watch_region=US&page={i}").json()
+                i+=1
+                for elem in json_file['results']:
+                    title = elem.get('original_name')
+                    if(re.search(pattern,title)):
+                        idnum=elem.get('id')
+                        voteavg = elem.get('vote_average')
+                        myRating.append(voteavg)
+                        votenum = elem.get('vote_count')
+                        summary =elem.get('overview')
+                        mySummary.append(summary)
+                        listbox.insert(END,title)
+        button3.pack() 
+        button4.pack()
+        
+button2=ttk.Button(root,text="Get Option",command=selectedget)
+button3=ttk.Button(root,text="Get Rating",command=selectedcurs)
+button4=ttk.Button(root,text="Get Summary",command=selectedsum)
+r1.pack()
+r2.pack()
+r3.pack()
+r4.pack()
+r5.pack()
+r6.pack()
+r7.pack()
+r8.pack()
+listbox.pack()
+button2.pack()
+root.mainloop()
